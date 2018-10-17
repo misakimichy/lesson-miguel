@@ -1,0 +1,167 @@
+:root {
+    --hairmain: #4a3d3a;
+    --bodymain: #ffecc8;
+}
+
+.closed {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+
+/***** Styling for main parts of Miguel *****/
+
+.face {
+    width: 75px;
+    height: 50px;
+    border-radius: 100% 100% 30px 100%;
+    background-color: var(--bodymain);
+    position: absolute;
+    top: 32px;
+    left: 5px;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+
+.ears {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+
+.ears ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ears ul li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color:  var(--bodymain);
+    border-radius: 90%;
+    margin-right: 10px;
+}
+
+.eyes {
+    position: absolute;
+    top: 11px;
+    left: 27px;
+}
+
+.eyes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eyes ul li {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #2f2929;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.nose {
+    width: 13px;
+    height: 10px;
+    background-color: #2f2929;
+    border-radius: 80%;
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+
+.chin {
+    position: absolute;
+    top: 34px;
+    left: 40px;
+}
+
+.body {
+    width: 105px;
+    height: 115px;
+    border-radius: 80%;
+    background-color: #c38e81;
+    position: absolute;
+    top: 48px;
+    left: -10px;
+}
+
+.feet {
+    width: 10px;
+    height: 20px;
+    background-color: var(--bodymain);
+    border-radius: 35%;
+}
+
+
+.foot1 {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    transform-origin: bottom right;
+    animation: feetmove2 5s ease-out 5s infinite;
+    -webkit-animation: feetmove2 5s ease-out 5s infinite;
+}
+
+.foot2 {
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    transform-origin: bottom right;
+    animation: feetmove2 5s ease-out 5s infinite;
+    -webkit-animation: feetmove2 5s ease-out 5s infinite;
+}
+
+.foot3 {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+    animation: feetmove1 5s ease-out 5s infinite;
+    -webkit-animation: feetmove1 5s ease-out 5s infinite;
+}
+
+.foot4 {
+    position: absolute;
+    top: 130px;
+    left: 55px;
+    transform: rotate(15deg);
+    transform-origin: bottom left;
+    animation: feetmove1 5s ease-out 5s infinite;
+    -webkit-animation: feetmove1 5s ease-out 5s infinite;;
+}
+
+.bodyhair {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+    z-index: -10;
+}
+
+/****** aniamtion *****/
+
+@keyframes feetmove1 {
+    20% {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}
+    60% {transform: rotate(20deg);}
+    80% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+
+@keyframes feetmove2 {
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(15deg);}
+    60% {transform: rotate(-20deg);}
+    80% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+}
+
+
