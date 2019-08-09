@@ -146,6 +146,14 @@
     z-index: -10;
 }
 
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
 /****** aniamtion *****/
 
 @keyframes feetmove1 {
